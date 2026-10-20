@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love ❤️</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .love-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .heart {
+            font-size: 80px;
+            animation: beat 1s infinite;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        button {
+            background: white;
+            color: #ff1493;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ffe4ec;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="love-box">
+        <div class="heart">❤️</div>
+
+        <h1>My Love</h1>
+
+        <p>
+            You make my world more beautiful.
+            <br>
+            Every heartbeat reminds me of you.
+        </p>
+
+        <button onclick="showLove()">Click Me ❤️</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById("message").innerHTML =
+                "You are someone truly special. ❤️";
+        }
+    </script>
+
+</body>
+</html>
